@@ -1,0 +1,563 @@
+
+
+
+
+/* General Styles */
+body {
+	display: flex;
+    flex-direction: column;
+   max-width: max-content;
+    margin: 0 auto; /* Centra el contenido */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-color: #404040; /* Fondo oscuro */
+    padding: 0 1rem; /* Espacio a los lados */
+    text-align: center; /* Centra texto en el cuerpo */
+	border-radius: 4px;
+	border: 1px solid #D3B17B;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la sección con imagen de fondo */
+.division70 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(59, 130, 246, 0.02), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Asegúrate de que este detrás de la barra de navegación */
+}
+
+.caption2 {
+      color: #D3B17B;
+	  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+	
+	.contenido {
+      color: #D3B17B;
+	  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+.title {
+      color: #D3B17B;
+	  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+.title {
+     margin-top: 3rem;
+	 font-size: 13px;
+    }
+	 }
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .division70 {
+        
+        height: auto; /* Permite que el contenido se ajuste */
+        padding: 20px 0; /* Añade espacio superior e inferior si es necesario */
+		top: 0;
+    }
+	
+	
+}
+    /* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .caption2 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+		 margin-top: 4rem;
+		 margin-bottom: -1rem; 
+		 color: #D3B17B;
+		 
+    }
+}
+
+    /* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .caption1 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+		 margin-top: 1rem; 
+		 margin-bottom: -1rem; 
+    }
+	 }
+	
+html {
+    font-size: 16px; /* Tamaño de fuente raíz más grande para mejor legibilidad */
+	 background-color: #171717;
+}
+
+
+
+/* Estilo para el texto debajo del logo */
+.diplomados {
+     color: #efecec; /* Color brillante para pruebas */
+    
+	font-size: 16.8px; /* Tamaño de fuente */
+  margin-top: -5px;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+.diplomados {
+    font-size: 12px;
+    margin-top: -5px;
+    text-align: left;
+    margin-left: -3rem;
+	}
+}
+
+
+img {margin:auto;padding:0px;width:100%;display: block;}
+img.logo {
+	width:178px;
+	margin:0px;
+	padding:0px;
+	justify-content: center; /* Centra la imagen horizontalmente */
+	 max-width: 100%;  /* Ajusta el tamaño de la imagen */
+    height: auto;
+	filter: drop-shadow(1.5px 1px 1.5px black);
+	}
+	
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+img {display: block;}
+img.logo {
+	width:132px;
+	margin-right:3rem;
+	padding:0px;
+	justify-content: center; /* Centra la imagen horizontalmente */
+	 max-width: 100%;  /* Ajusta el tamaño de la imagen */
+    height: auto;
+	filter: drop-shadow(1.5px 1px 1.5px black);
+	}
+		}
+	
+
+
+
+
+
+
+
+img.opaco:hover {opacity:0.5;}
+/* Form Group Styles */
+.form-group {
+    width: 100%; /* Asegura que ocupe todo el ancho del formulario */
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+input.form-control,
+textarea.form-control,
+select.form-control {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #D3B17B; /* Borde dorado */
+    color: #b7b7b7;
+    font-size: 16px;
+    padding: 15px; /* Aumenta el padding */
+    border-radius: 4px;
+    width: 90%; /* Ajuste de ancho para inputs */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin-top: 0.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+button,
+input[type="submit"],
+a.button-link {
+	background-color: rgba(9, 140, 130, 0.3);
+    border: 1px solid #008c82;
+    color: #efecec;
+    font-size: 16px;
+    padding: 10px 50px; /* Aumentar padding horizontalmente */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Suaviza la transición de color */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+	
+}
+
+a.button-link {
+    display: inline-block; /* Asegura que el enlace actúe como un botón */
+}
+
+a.button-link:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #D3B17B;
+	
+
+}
+
+
+button:hover,
+input[type="submit"]:hover,
+a.button-link:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #D3B17B;
+	border: 1px solid #D3B17B;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    button,
+    input[type="submit"],
+    a.button-link {
+        font-size: 12.5px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+       
+    }
+}
+
+/* Navigation Styles */
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+ul.topnav {
+
+    list-style-type: none;
+    margin: 0;
+    
+    padding: 0;
+    z-index: 100; /* Asegura que la barra de navegación esté por encima */
+    position: relative; /* Para que el z-index funcione correctamente */
+}
+
+ul.topnav li {
+    float: left;
+    max-height: 64px;
+}
+
+ul.topnav li a {
+	position: relative; /* Asegura que el z-index funcione correctamente */
+	margin: 0 auto; /* Esto centra el elemento horizontalmente */
+    color: #efecec;
+    display: inline-block;
+    font-size: 16px;
+    padding: 25px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+	background: rgba(9, 140, 130, 0.3);
+	border: 1px solid #008c82;
+	border-radius: 4px;
+	margin-left: 0.2rem;
+	
+
+
+
+}
+
+ul.topnav li a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color:  #D3B17B;
+	border: 1px solid #D3B17B;
+  border-radius: 4px;
+
+}
+
+ul.topnav li a:active {
+    background-color: #48c4bf;
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+ul.topnav li 
+{
+width:100%;
+
+}
+
+
+
+ul.topnav {
+    display: flex; /* Usa flexbox para disposición horizontal */
+    
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Ajuste en la imagen del logo para que no interfiera con los botones */
+ul.topnav li img.logo {
+    z-index: 1; /* Valor más bajo para asegurar que los botones estén por encima */
+}
+
+ul.topnav li a {
+     position: relative;
+    z-index: 10;
+    display: inline-block;
+    margin-left: 2.2rem;
+	margin-top: 0.7rem;
+    line-height: 1;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+
+ /* Controla el orden de los botones */
+    ul.topnav li:nth-child(2) {
+        order: 2; /* El botón "Ingresar" será el primero */
+    }
+
+    ul.topnav li:nth-child(3) {
+        order: 1; /* El botón "Registrar" será el segundo */
+    }
+
+    input.form-control,
+    textarea.form-control,
+    select.form-control {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        padding: 10px; /* Ajuste de padding */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 14px; /* Tamaño de fuente más pequeño para botones */
+        padding: 10px; /* Ajuste de padding */
+        width: 100%; /* Botones ocupan todo el ancho */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centra el texto de copyright */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Mensaje de error */
+#error {
+    color: red; /* Color para el mensaje de error */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+
+
+/* Estilos para el copyright */
+footer {
+    text-align: center; /* Centra el texto de copyright */
+    margin-top: 20px; /* Espacio superior */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Para pantallas entre 768px y 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+    table {
+        width: 100%!important; /* Asegura que la tabla ocupe todo el ancho */
+        font-size: 16px; /* Aumenta el tamaño de la fuente para mejorar legibilidad */
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        padding: 10px; /* Mantiene el padding para separación adecuada */
+        text-align: left;
+        border: 1px solid #D3B17B; /* Borde para separar claramente las celdas */
+    }
+
+    /* Muestra la tabla en formato de bloque en pantallas medianas */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none; /* Oculta los encabezados en formato tradicional */
+    }
+
+    tr {
+        margin-bottom: 10px; /* Añade espacio entre las filas */
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 16px; /* Ajuste para que los datos sean más grandes */
+    }
+
+    /* Para mostrar correctamente los nombres de los campos (encabezados) junto con los valores */
+    td:before {
+        content: attr(data-label); /* Muestra los nombres de los campos */
+        flex-basis: 35%; /* Ocupa un 35% del espacio para los títulos */
+        font-weight: bold;
+        color: #D3B17B;
+    }
+
+    /* Ajusta la estructura de las filas para que los datos y sus etiquetas no se separen */
+    td {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    /* Mejora la visibilidad del total y precio en columnas más grandes */
+    td[data-label="Total"], td[data-label="Precio"] {
+        font-weight: bold;
+        color: #222;
+    }
+}
+
+	
+	
+	
+	
+	
+/* Estilos para la tabla en pantallas grandes */
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #D3B17B;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Hace que la tabla se muestre en formato de bloque */
+        box-sizing: border-box; /* Asegura que el padding no expanda el ancho total */
+    }
+
+    thead tr {
+        display: none; /* Oculta los encabezados de la tabla */
+    }
+
+    tr {
+        margin-bottom: 10px; /* Espacio entre las filas */
+        border: 1px solid #D3B17B;
+        padding: 10px;
+        word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        font-size: 12px !important;
+        border: none;
+        white-space: normal; /* Permite el ajuste de texto en múltiples líneas */
+        word-break: break-word; /* Ajuste para palabras largas */
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+    }
+
+    td:before {
+        content: attr(data-label); /* Utiliza el atributo `data-label` para mostrar los títulos de las columnas */
+        flex-basis: 40%;
+        font-weight: bold;
+        color: #D3B17B;
+    }
+}
+
+@media (max-width: 768px) {
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #D3B17B !important;
+        padding: 0.5rem;
+        word-wrap: break-word; /* Asegura que el contenido no se desborde */
+    }
+
+    table tbody td {
+        display: block;
+        text-align: right;
+        padding-left: 48%;
+        position: relative;
+        white-space: normal; /* Permite el ajuste de texto en múltiples líneas */
+        word-break: break-word; /* Ajusta palabras largas */
+        overflow: hidden; /* Controla el desbordamiento del contenido */
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45% !important;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        white-space: normal; /* Evita desbordamientos */
+    }
+}
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #D3B17B;
+}
+
+
+
+/* Table Styles */
+table1 {
+    width: 50%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #D3B17B;
+}
+
+
+
+/
+
+    /* Ajustes específicos para la tabla en pantallas pequeñas */
+    table {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+    }
+
+    table th, 
+    table td {
+        padding: 5px; /* Menos padding para reducir el espacio */
+    }
+
+ 
+
+
+

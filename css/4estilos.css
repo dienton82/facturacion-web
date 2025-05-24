@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+	display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-color: #404040; /* Fondo oscuro */
+    padding: 0 1rem; /* Espacio a los lados */
+    text-align: center; /* Centra texto en el cuerpo */
+	border-radius: 4px;
+	border: 1px solid #D3B17B;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la sección con imagen de fondo */
+.division70 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(59, 130, 246, 0.02), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Asegúrate de que este detrás de la barra de navegación */
+}
+
+.caption2 {
+      color: #D3B17B;
+	  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+	
+	.contenido {
+      color: #D3B17B;
+	  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+/* Estilos generales del botón */
+#abierto {
+    margin: 0 auto;
+    cursor: pointer;
+    background: rgba(9, 140, 130, 0.3);
+    color: #efecec;
+    padding: 10px 5px;
+    border: 1px solid #008c82;
+    max-width: 32.5%;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    transition: background 0.3s ease; /* Suaviza el cambio de fondo */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Pseudo-elemento con el ícono */
+#abierto::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    animation: iconSwitchAndScale 2s ease-in-out infinite; /* Animación combinada de cambio de icono y escalado */
+}
+
+/* Cambios en hover */
+#abierto:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #D3B17B;
+    border: 1px solid #D3B17B;
+    border-radius: 4px;
+}
+
+/* Keyframes para alternar los iconos y hacer el escalado */
+@keyframes iconSwitchAndScale {
+    0% {
+        transform: translateY(0) scale(1); /* Estado inicial sin movimiento ni escalado */
+        background: url(../img/open.png) no-repeat;
+    }
+    50% {
+        transform: translateY(-5px) scale(1.1); /* Escala el ícono y lo mueve hacia arriba */
+        background: url(../img/close.png) no-repeat;
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Vuelve al estado inicial */
+        background: url(../img/open.png) no-repeat;
+    }
+}
+
+/* Ajustes para pantallas divididas o medianas (laptops, pantallas divididas, tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #abierto {
+        width: 42.5%; /* Ajusta el ancho del botón para pantallas medianas */
+        max-width: none; /* Desactiva el tamaño máximo */
+        margin: 0 auto; /* Sigue centrado en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #abierto {
+        
+        max-width: none; /* Desactiva el max-width */
+        margin: 0 auto; /* Centro horizontal */
+        padding: 10px 0 2px 30px; /* Ajusta el padding si es necesario */
+    }
+}
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .division70 {
+        
+        height: auto; /* Permite que el contenido se ajuste */
+        padding: 20px 0; /* Añade espacio superior e inferior si es necesario */
+		top: 0;
+    }
+	
+	
+}
+    /* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .caption2 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+		 margin-top: 3rem; 
+		 margin-bottom: -1rem; 
+		 color: #D3B17B;
+		 
+    }
+}
+
+    /* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .caption1 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+		 margin-top: 1rem; 
+		 margin-bottom: -1rem; 
+    }
+	 }
+	
+html {
+    font-size: 16px; /* Tamaño de fuente raíz más grande para mejor legibilidad */
+	 background-color: #171717;
+}
+
+/* Contenedor del logo y el texto */
+.logo-container {
+   display: flex;
+    flex-direction: column; /* Apila el logo y el texto verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    float: left; /* Mantiene el logo a la izquierda */
+    position: relative; /* Para que el z-index funcione */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estilo para el texto debajo del logo */
+.diplomados {
+     color: #efecec; /* Color brillante para pruebas */
+    
+	font-size: 16.8px; /* Tamaño de fuente */
+  margin-top: -5px;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+.diplomados {
+     
+    font-size: 9px; /* Tamaño de fuente */
+    margin-top: -5px; /* Espacio entre el logo y el texto */
+	text-align: left; /* Centra el texto */
+	
+}
+}
+
+
+
+
+
+
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo ligeramente oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #D3B17B; /* Borde dorado */
+    display: flex; /* Flex para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+
+img {margin:auto;padding:0px;width:100%;display: block;}
+img.logo {
+	width:178px;
+	margin:0px;
+	padding:0px;
+	justify-content: center; /* Centra la imagen horizontalmente */
+	 max-width: 100%;  /* Ajusta el tamaño de la imagen */
+    height: auto;
+	filter: drop-shadow(1.5px 1px 1.5px black);
+	}
+	
+img.opaco:hover {opacity:0.5;}
+/* Form Group Styles */
+.form-group {
+    width: 100%; /* Asegura que ocupe todo el ancho del formulario */
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+input.form-control,
+textarea.form-control,
+select.form-control {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #D3B17B; /* Borde dorado */
+    color: #b7b7b7;
+    font-size: 16px;
+    padding: 15px; /* Aumenta el padding */
+    border-radius: 4px;
+    width: 90%; /* Ajuste de ancho para inputs */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin-top: 0.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+button,
+input[type="submit"],
+a.button-link {
+	background-color: rgba(9, 140, 130, 0.3);
+    border: 1px solid #008c82;
+    color: #efecec;
+    font-size: 16px;
+    padding: 10px 50px; /* Aumentar padding horizontalmente */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Suaviza la transición de color */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.4);
+	
+}
+
+a.button-link {
+    display: inline-block; /* Asegura que el enlace actúe como un botón */
+}
+
+a.button-link:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #D3B17B;
+	
+
+}
+
+
+button:hover,
+input[type="submit"]:hover,
+a.button-link:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #D3B17B;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    button,
+    input[type="submit"],
+    a.button-link {
+        font-size: 12.5px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+       
+    }
+}
+
+/* Navigation Styles */
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+ul.topnav {
+
+    list-style-type: none;
+    margin: 0;
+    
+    padding: 0;
+    z-index: 100; /* Asegura que la barra de navegación esté por encima */
+    position: relative; /* Para que el z-index funcione correctamente */
+}
+
+ul.topnav li {
+    float: left;
+    max-height: 64px;
+}
+
+ul.topnav li a {
+	position: relative; /* Asegura que el z-index funcione correctamente */
+	margin: 0 auto; /* Esto centra el elemento horizontalmente */
+    color: #efecec;
+    display: inline-block;
+    font-size: 16px;
+    padding: 25px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+	background: rgba(9, 140, 130, 0.3);
+	border: 1px solid #008c82;
+	border-radius: 4px;
+	margin-left: 0.2rem;
+	
+
+
+
+}
+
+ul.topnav li a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color:  #D3B17B;
+	border: 1px solid #D3B17B;
+  border-radius: 4px;
+
+}
+
+ul.topnav li a:active {
+    background-color: #48c4bf;
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+ul.topnav li 
+{
+width:100%;
+
+}
+
+
+
+ul.topnav {
+    display: flex; /* Usa flexbox para disposición horizontal */
+    
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Ajuste en la imagen del logo para que no interfiera con los botones */
+ul.topnav li img.logo {
+    z-index: 1; /* Valor más bajo para asegurar que los botones estén por encima */
+}
+
+ul.topnav li a {
+     position: relative; /* Asegura que el z-index funcione correctamente */
+    z-index: 10; /* Valor elevado para estar encima de otros elementos */
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+	margin-left: 1.8rem;
+	
+	
+}
+
+ /* Controla el orden de los botones */
+    ul.topnav li:nth-child(2) {
+        order: 2; /* El botón "Ingresar" será el primero */
+    }
+
+    ul.topnav li:nth-child(3) {
+        order: 1; /* El botón "Registrar" será el segundo */
+    }
+
+    input.form-control,
+    textarea.form-control,
+    select.form-control {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        padding: 10px; /* Ajuste de padding */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 14px; /* Tamaño de fuente más pequeño para botones */
+        padding: 10px; /* Ajuste de padding */
+        width: 100%; /* Botones ocupan todo el ancho */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centra el texto de copyright */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Mensaje de error */
+#error {
+    color: red; /* Color para el mensaje de error */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Ajustes adicionales para el formulario */
+.login-form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+/* Estilos para el copyright */
+footer {
+    text-align: center; /* Centra el texto de copyright */
+    margin-top: 20px; /* Espacio superior */
+}
