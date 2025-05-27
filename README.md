@@ -68,7 +68,7 @@ git clone https://github.com/dienton82/facturacion-web.git
 
 ---
 
-## 📷 Capturas (opcional)
+## 📷 Capturas
 
 ![Pantalla principal](img/facturacion.webp)
 
