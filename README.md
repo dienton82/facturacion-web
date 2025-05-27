@@ -70,7 +70,7 @@ git clone https://github.com/dienton82/facturacion-web.git
 
 ## 📷 Capturas (opcional)
 
-> Puedes agregar aquí algunas imágenes o GIFs del funcionamiento del sistema si lo deseas.
+![Pantalla principal](img/facturacion.webp)
 
 ---
 
